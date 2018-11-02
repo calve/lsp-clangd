@@ -30,7 +30,7 @@ brew install llvm
   :load-path
   "<path-to-lsp-clangd>"
   :init
-  (add-hook 'c-mode--hook #'lsp-clangd-c-enable)
+  (add-hook 'c-mode-hook #'lsp-clangd-c-enable)
   (add-hook 'c++-mode-hook #'lsp-clangd-c++-enable)
   (add-hook 'objc-mode-hook #'lsp-clangd-objc-enable))
 ```
@@ -45,7 +45,7 @@ to a suitable path, *e.g.* `<path-to-lsp-clangd>`.
 
 (require 'lsp-clangd)
 
-(add-hook 'c-mode--hook #'lsp-clangd-c-enable)
+(add-hook 'c-mode-hook #'lsp-clangd-c-enable)
 (add-hook 'c++-mode-hook #'lsp-clangd-c++-enable)
 (add-hook 'objc-mode-hook #'lsp-clangd-objc-enable)
 ```
